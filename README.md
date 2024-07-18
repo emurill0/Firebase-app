@@ -10,15 +10,16 @@ PASOS A SEGUIR:
 3.   npx expo install
 4.   instalar dependencias
 5.   crear el env.
-API_KEY = AIzaSyB0xRorfML5yhaw7r_G56oSsxODHo1GQhU, 
-AUTH_DOMAIN = practica-firebase-20220151.firebaseapp.com, 
-PROJECT_ID = practica-firebase-20220151,
-STORAGE_BUCKET = practica-firebase-20220151.appspot.com,
-MESSAGING_SENDER_ID = 794363095726,
+API_KEY = AIzaSyB0xRorfML5yhaw7r_G56oSsxODHo1GQhU
+AUTH_DOMAIN = practica-firebase-20220151.firebaseapp.com 
+PROJECT_ID = practica-firebase-20220151
+STORAGE_BUCKET = practica-firebase-20220151.appspot.com
+MESSAGING_SENDER_ID = 794363095726
 APP_ID = 1:794363095726:web:d7962b58df869d92799b3f
-
 7.   npx expo start
 
+
+API_KEY : 'AIzaSyB0xRorfML5yhaw7r_G56oSsxODHo1GQhU'
 
 Dependencias utilizadas:
 
@@ -49,4 +50,4 @@ npm install react-native-safe-area-context@^4.10.1
 
 npm install react-native-screens@^3.31.1
 
-npm install @react-native-async-storage/async-storage 
+npm install react-native-async-storage/async-storage 
