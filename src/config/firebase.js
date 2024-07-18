@@ -18,7 +18,7 @@ const firebaseConfig = {
 
 console.log("Valor de configuracion", firebaseConfig);
 
-// Firebase
+// Firebase hola
 
 const app = initializeApp(firebaseConfig);
 if (app) {
