@@ -2,6 +2,8 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { getStorage } from 'firebase/storage';
 import { API_KEY, AUTH_DOMAIN, PROJECT_ID, STORAGE_BUCKET, MESSAGING_SENDER_ID, APP_ID } from '@env';
+import { initializeAuth, getReactNativePersistence } from 'firebase/auth';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 // Firebase configuracion
 const firebaseConfig = {
@@ -13,9 +15,11 @@ const firebaseConfig = {
   appId: APP_ID    
 };
 
+
 console.log("Valor de configuracion", firebaseConfig);
 
 // Firebase
+
 const app = initializeApp(firebaseConfig);
 if (app) {
   console.log('Firebase iniciada correctamente');
@@ -38,4 +42,8 @@ if (storage) {
   console.log('storage iniciada incorrectamente');
 }
 
-export { database,storage,app };
+const auth = initializeAuth(app, {
+  persistence: getReactNativePersistence(AsyncStorage)
+});
+
+export { database,storage,app,auth };

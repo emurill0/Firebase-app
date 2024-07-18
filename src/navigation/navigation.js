@@ -12,7 +12,7 @@ const Navigation = () => {
         <NavigationContainer>
             <Stack.Navigator initialRouteName="Login">
                 <Stack.Screen name="Login" component={Login} options={{ title: 'Login' }} />
-                <Stack.Screen name="Register" component={Register} options={{ title: 'Registro' }} />  {/* Añade la pantalla de registro */}
+                <Stack.Screen name="Register" component={Register} options={{ title: 'Registro' }} /> 
                 <Stack.Screen name="Home" component={Home} options={{ title: 'Home' }} />
                 <Stack.Screen name="Add" component={Add} options={{ presentation: 'modal', title: 'Agregar productos' }} />
             </Stack.Navigator>

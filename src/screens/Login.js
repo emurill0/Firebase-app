@@ -1,11 +1,8 @@
-// Login.js
 import React, { useState } from 'react';
 import { View, Text, TextInput, StyleSheet, Alert } from 'react-native';
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
-import { app } from '../config/firebase.js';
+import { auth } from '../config/firebase.js'; // Importa auth desde el archivo de configuración
 import Button from '../components/Boton';
-
-const auth = getAuth(app);
 
 export default function Login({ navigation }) {
   const [email, setEmail] = useState('');
