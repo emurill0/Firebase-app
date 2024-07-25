@@ -6,14 +6,14 @@ import { initializeAuth, getReactNativePersistence } from 'firebase/auth';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 // Firebase configuracion
-const firebaseConfig = { 
-    apiKey: "AIzaSyB0xRorfML5yhaw7r_G56oSsxODHo1GQhU",
-    authDomain: "practica-firebase-20220151.firebaseapp.com",
-    projectId: "practica-firebase-20220151",
-    storageBucket: "practica-firebase-20220151.appspot.com",
-    messagingSenderId: "794363095726",
-    appId: "1:794363095726:web:d7962b58df869d92799b3f"
-  };
+const firebaseConfig = {
+  apiKey: "AIzaSyBBYRwKH_qRO6Oim_LC-BpxsXv0eejh16Q",
+  authDomain: "practica-firebase-20220021.firebaseapp.com",
+  projectId: "practica-firebase-20220021",
+  storageBucket: "practica-firebase-20220021.appspot.com",
+  messagingSenderId: "603970761082",
+  appId: "1:603970761082:web:3793b2bf53ab102cffe6c3"
+};
 
 
 console.log("Valor de configuracion", firebaseConfig);
@@ -46,4 +46,4 @@ const auth = initializeAuth(app, {
   persistence: getReactNativePersistence(AsyncStorage)
 });
 
-export { database,storage,app,auth };
+export { database, storage, app, auth };
